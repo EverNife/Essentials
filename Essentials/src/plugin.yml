@@ -363,7 +363,7 @@ commands:
   tphere:
     description: Teleport a player to you.
     usage: /<command> <player>
-    aliases: [s,etphere]
+    aliases: [etphere]
   tpo:
     description: Teleport override for tptoggle.
     usage: /<command> <player> [otherplayer]
@@ -384,14 +384,6 @@ commands:
     description: Spawn a tree where you are looking.
     usage: /<command> <tree|birch|redwood|redmushroom|brownmushroom|jungle|junglebush|swamp>
     aliases: [etree]
-  unban:
-    description: Unbans the specified player.
-    usage: /<command> <player>
-    aliases: [pardon,eunban,epardon]
-  unbanip:
-    description: Unbans the specified IP address.
-    usage: /<command> <address>
-    aliases: [eunbanip,pardonip,epardonip]
   unlimited:
     description: Allows the unlimited placing of items.
     usage: /<command> <list|item|clear> [player]
