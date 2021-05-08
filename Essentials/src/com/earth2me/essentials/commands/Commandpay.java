@@ -47,7 +47,7 @@ public class Commandpay extends EssentialsLoopCommand {
         if (amount.compareTo(ess.getSettings().getMinimumPayAmount()) < 0) { // Check if amount is less than minimum-pay-amount
             throw new Exception(tl("minimumPayAmount", NumberUtil.displayCurrencyExactly(ess.getSettings().getMinimumPayAmount(), ess)));
         }
-        loopOnlinePlayers(server, user.getSource(), false, user.isAuthorized("essentials.pay.multiple"), args[0], args);
+        loopOfflinePlayers(server, user.getSource(), false, user.isAuthorized("essentials.pay.multiple"), args[0], args);
         if (informToConfirm) {
             String cmd = "/" + commandLabel + " " + StringUtil.joinList(" ", (Object[]) args);
             user.sendMessage(tl("confirmPayment", NumberUtil.displayCurrency(amount, ess), cmd));
